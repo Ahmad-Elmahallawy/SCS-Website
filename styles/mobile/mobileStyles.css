@@ -51,7 +51,6 @@ nav a {
 
 /* This controls the behaviour when you hover over a link in the navbar */
 nav .site-link:hover {
-  font-size: 1.4rem;
   background-color: #d7ccf6;
   border-radius: 5px;
   padding: 0.2em;

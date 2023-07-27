@@ -13,7 +13,7 @@
     color: #8065cd;
   }
 
-  .title-and-subtitle-banner{
+  .title-and-subtitle-banner {
     color: white;
     display: flex;
     flex-direction: column;
@@ -21,31 +21,42 @@
     text-align: center;
   }
 
-  .title-and-subtitle-banner h1{
+  .title-and-subtitle-banner h1 {
     font-size: 60px;
     margin: 0;
   }
 
-  .title-and-subtitle-banner h3{
+  .title-and-subtitle-banner h3 {
     font-size: 30px;
     margin: 0;
   }
 
-
-  .algotime-and-clothing-btn{
+  .algotime-and-clothing-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   .algotime-and-clothing-btn button {
     background-color: transparent;
     color: #ffffff;
     margin: 5px;
-    width: 140px;
-    font-size: 14px;
+    margin-top: 30px;
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background-image: linear-gradient(#8065cd, #b1edb1);
+    border-radius: 5px;
   }
+
+  .algotime-and-clothing-btn #algo-btn {
+    margin-right: 15px;
+  }
+
+  .algotime-and-clothing-btn #clothing-btn {
+    margin-left: 15px;
+  }
+
   #site-links {
     display: flex;
     justify-content: space-evenly;
