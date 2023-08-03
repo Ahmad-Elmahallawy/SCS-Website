@@ -13,127 +13,100 @@
   width: 100%;
 }
 
-#about {
-  background-color: var(--snow);
-  flex-flow: column nowrap;
-  box-sizing: border-box;
-  padding: 2rem;
-  height: fit-content;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-#about-us {
-  word-wrap: break-word;
+#mission div {
   height: 100%;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-#about-us p {
-  width: 90%;
-}
-
-#aliens {
-  height: 100%;
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-#aliens img {
-  width: 66%;
+#mission .mission-title {
+  text-align: center;
+  font: 600;
 }
 
-#mission {
+#mission #mission-text {
   display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  justify-content: start;
-  /* box-shadow: rgba(128, 101, 205, 0.3) 0px 19px 38px,
-    rgba(128, 101, 205, 0.22) 0px 15px 12px;
-  box-sizing: border-box;
-  margin-bottom: 20px; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
 }
 
-#mission h3 {
-  margin: 1rem 0 0 0;
+.mission-container {
+  margin: 2rem;
+  border-radius: 5px;
+  border: 2px solid #daffda;
+  background-color: #eeffee;
+  height: 100% !important;
+  box-shadow: 0 0 12px #b1edb1;
+}
+
+.mission-containter img {
+  width: 20% !important;
+  height: 20% !important;
 }
 
 /* This selects the header in the mission section */
-#mission h2 {
+#mission h2,
+#about h2,
+#events h2 {
   margin-top: 40px;
   font-size: 3rem;
   font-weight: 600;
-  color: rgb(128, 101, 205);
+  color: lightgrey;
+  text-shadow: #b1edb1 0 0 10px;
 }
 
+#events h2 a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+#events h2:hover {
+  text-decoration: underline;
+}
+
+#events .events-images-slider {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#events .events-images-slider img{
+  height: 70%;
+}
 /* This selects paragraphs in the mission section */
 #mission p {
   width: 90%;
 }
 
+#about,
 #events {
-  height: fit-content;
-  background-color: var(--snow);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  box-sizing: border-box;
-  padding: 3%;
+  flex-direction: column !important;
 }
 
-#event-cards {
+.about-us-title h2 {
+  text-align: center;
+}
+
+#about-us img {
+  width: 400px !important;
+  height: 250px !important;
+  margin: 0px 20px;
+}
+
+#about-us {
+  color: #eeffee;
   display: flex;
-  width: 100%;
-  height: fit-content;
-  flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
 }
 
-.card {
-  height: fit-content;
-  width: 95%;
-  margin-bottom: 2rem;
-  position: relative;
-  right: 0.5rem;
-
-  border: 1px solid gray;
-  box-sizing: border-box;
-  padding: 0.5rem;
-  box-shadow: 0.5rem 0.5rem var(--concordia);
-}
-
-.card-image-container {
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#events a {
-  align-self: flex-end;
-  cursor: pointer;
-  color: var(--concordia);
-  text-decoration: none;
-  margin-right: 0.5rem;
-}
-
-#events a:hover {
-  text-decoration: underline;
+.divider {
+  background-color: #eeffee;
+  margin: 0;
+  border: 1px solid #eeffee;
 }
 
 #sponsors {

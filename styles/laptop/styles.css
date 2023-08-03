@@ -1,4 +1,8 @@
 @media (min-width: 1000px) {
+  body {
+    background-color: #1c1f4b !important;
+  }
+
   section {
     min-height: 66vh;
   }

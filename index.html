@@ -42,46 +42,51 @@
 
         <!-- Just another section, plaecholder text in it -->
         <section id="mission">
-          <h2>Our Mission</h2>
+          <div class="mission-title">
+            <h2>Our Mission</h2>
+          </div>
           <div id="mission-text">
-            <h3>Help you learn new skills</h3>
-            Through our tutorials, you’ll encounter tools and programming
-            languages that you may never see in your classes, such as Git,
-            Android and Python. These skills will help you tremendously when
-            working on projects and looking for a job.
-
-            <h3>Give you extra programming practice</h3>
-            Aside from a few small assignments and projects, your classes won’t
-            give you very much practical experience. During our weekly Algorithm
-            Time event, you can challenge yourself with fun coding problems,
-            some of which can potentially be given to you in a real job
-            interview. You can also participate in awesome programming
-            competitions like CS Games and IEEEXtreme, which are not only tons
-            of fun but give you excellent coding practice.
-
-            <h3>Help you in your job hunt</h3>
-            Networking is extremely important when it comes to your future
-            career. We host events like guest speakers and company tours, which
-            will give you the opportunity to meet with representatives of
-            different companies and build your network.
-
-            <h3>Help you make new friends and have fun!</h3>
-            We host a number of social events throughout the year, such as
-            Lizard Lounge, Milk & Cookies, and Wine & Cheese. You’ll meet tons
-            of really cool people and make your experience as a Concordia
-            student worthwhile.
+            <div class="mission-container">
+              <img src="assets/skills.svg" alt="skills logo" />
+              <h3>Help you learn new skills</h3>
+              Through our tutorials, you’ll encounter tools and programming
+              languages that you may never see in your classes, such as Git,
+              Android and Python. These skills will help you tremendously when
+              working on projects and looking for a job.
+            </div>
+            <div class="mission-container">
+              <img src="assets/programming.svg" alt="programming logo" />
+              <h3>Give you extra programming practice</h3>
+              Aside from a few small assignments and projects, your classes
+              won’t give you very much practical experience. During our weekly
+              Algorithm Time event, you can challenge yourself with fun coding
+              problems, some of which can potentially be given to you in a real
+              job interview. You can also participate in awesome programming
+              competitions like CS Games and IEEEXtreme, which are not only tons
+              of fun but give you excellent coding practice.
+            </div>
+            <div class="mission-container">
+              <img src="assets/jobsearch.svg" alt="job search logo" />
+              <h3>Help you in your job hunt</h3>
+              Networking is extremely important when it comes to your future
+              career. We host events like guest speakers and company tours,
+              which will give you the opportunity to meet with representatives
+              of different companies and build your network.
+            </div>
           </div>
         </section>
+
+        <hr class="divider" />
 
         <!-- about setion, child of wrapper -->
         <section id="about">
           <!-- "about" has two children, which are divs that split the section into two horizontal boxes, one for the image on the left and the other for text on the right -->
-          <div id="aliens">
-            <img src="assets/group_photo.jpg" />
+          <div class="about-us-title">
+            <h2>About Us</h2>
           </div>
 
           <div id="about-us">
-            <h2>About Us</h2>
+            <img src="assets/group-photo.png" alt="group photo" />
             <p>
               The Computer Science and Software Engineering Club (SCS) is open
               to all Concordia students. We help students at all levels to learn
@@ -92,42 +97,33 @@
             </p>
           </div>
         </section>
+        <hr class="divider" />
 
-        <!-- These are empty divs used to make space between the sections. These are the gaps in the site that make it look like the other divs are scrolling over the fixed backgroun -->
-        <section class="spacer"></section>
-
-        <!-- Events section with the event cards in it -->
+        <!-- Slideshow container -->
         <section id="events">
-          <h2>Upcoming events...</h2>
-
-          <div id="event-cards">
-            <!-- Three children of "events-cards", all card divs. Notice the "card" class. Typical design pattern.  -->
-            <div id="event-card-1" class="card">
-              <div class="card-image-container">
-                <img class="card-image" src="./assets/events/algotime.png" />
-              </div>
-              <h2>Algotime</h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </div>
-            <div id="event-card-2" class="card">
-              <!-- <h2>Event 2</h2>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-            </div>
-            <div id="event-card-3" class="card">
-              <!-- <h2>Event 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-            </div>
+          <div class="events-title">
+            <h2><a href="/events">Click Here To View Our Events</a></h2>
           </div>
-          <a href="./sections/events.html"><h2>All events...</h2></a>
+          <div class="events-images-slider">
+            <!-- <img
+              class="mySlides"
+              src="assets/aliens.jpeg"
+              style="width: 100%"
+            /> -->
+            <img class="mySlides" src="assets/events-graphics/algotime.png" style="width: 100%" />
+            <img
+              class="mySlides"
+              src="assets/events-graphics/milkandcookies.jpg"
+              style="width: 100%"
+            />
+          </div>
         </section>
+        <hr class="divider" />
+        <!-- Events section with the event cards in it -->
 
-        <!-- Another spacer -->
-        <section class="spacer"></section>
+        
+
+        <hr class="divider" />
 
         <!-- Just the sponsors section -->
         <section id="sponsors">
